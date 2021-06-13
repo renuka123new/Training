@@ -1,5 +1,7 @@
 # Training
+
 Codes developed during training
+
 2/6/2021:-  CheckAlphabate.py ,
             Dice_game.py(Hacker-earth) ,
             MultipleOf11.py ,
