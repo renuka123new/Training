@@ -18,4 +18,6 @@ Codes developed during training
             wordFrequency.py ,
             BookManageSystem.py 
           
-11/6/2021:-  reverse_Polish_notation.py
+11/6/2021:-  reverse_Polish_notation.py , 
+             array_permutation.py , 
+             wildCard.py 
