@@ -23,3 +23,5 @@ Codes developed during training
 11/6/2021:-  reverse_Polish_notation.py , 
              array_permutation.py , 
              wildCard.py 
+1/7/2021:-  create_Table.html
+            LMS_Table.html(Library management system using html)
