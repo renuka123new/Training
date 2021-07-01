@@ -24,5 +24,7 @@ Codes developed during training
              array_permutation.py , 
              wildCard.py
              
+15/6/2021:- Library_Management_Sustem.sql
+             
 1/7/2021:-  create_Table.html ,
             LMS_Table.html(Library management system using html)
