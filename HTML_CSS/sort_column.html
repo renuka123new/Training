@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort Table Using JS </title>
+<style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+
+<script>
+function sortAsc() {
+  var data, rows, swap, i, x, y, shouldSwap;
+  data = document.getElementById("myTable");
+  swap = true;
+  while (swap) {
+    swap = false;
+    rows = data.rows;
+   //i=0 :-- heading of column
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwap = false;
+      //compare two successive elements
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwap = true;
+        break;
+      }
+    }
+    if (shouldSwap) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      swap = true;
+    }
+  }
+}
+function sortDes() {
+  var data, rows, swap, i, x, y, shouldSwap;
+  data = document.getElementById("myTable");
+  swap = true;
+  while (swap) {
+    swap = false;
+    rows = data.rows;
+    //i=0 :-- heading of column
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwap = false;
+      //compare two successive elements
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwap = true;
+        break;
+      }
+    }
+    if (shouldSwap) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      swap = true;
+    }
+  }
+}
+</script>
+
+</head>
+<body>
+
+<p>Sort all the books by name:</p>
+<button onclick="sortAsc()">Sort Ascending</button>
+<button onclick="sortDes()">Sort Descending</button><hr>
+
+<table style="width:100%" id="myTable">
+    <tr>
+      <th>BOOK_NAME</th>
+      <th>Sr.No.</th>
+      <th>BOOK_ID</th>
+      <th>MEMBER_ID</th> 
+      <th>SUPPLIER_ID</th>
+      <th>AUTHER</th>
+      <th>PRICE</th>
+    </tr>
+    <tr>
+      <td>C_PROGRAMMING</td>
+      <td>1</td>
+      <td>B001</td>
+      <td>LM004</td>
+      <td>BS04</td>
+      <td>DENIC_RITCHI</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>OPERATING SYSTEM</td>
+      <td>2</td>
+      <td>B002</td>
+      <td>LM009</td>
+      <td>BS02</td>
+      <td>Zac Barnett</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>APTITUDE</td>
+      <td>3</td>
+      <td>B003</td>
+      <td>LM005</td>
+      <td>BS03</td>
+      <td>R.S.AGRAWAL</td>
+      <td>350</td>
+    </tr>
+    <tr>
+      <td>JAVA</td>
+      <td>4</td>
+      <td>B004</td>
+      <td>LM001</td>
+      <td>BS04</td>
+      <td>DENIC_RITCHI</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>Data Structure</td>
+      <td>5</td>
+      <td>B005</td>
+      <td>LM005</td>
+      <td>BS01</td>
+      <td>DENIC_RITCHI</td>
+      <td>550</td>
+    </tr>
+     <tr>
+      <td>Python</td>
+      <td>5</td>
+      <td>B004</td>
+      <td>LM003</td>
+      <td>BS02</td>
+      <td>Guido Van Rossum</td>
+      <td>650</td>
+    </tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+  border: 1px solid black;
+}
+</style>
+<script type="text/javascript">
+  function myFunction() {
+    var book_id = document.getElementById("myText").value;
+    var book = document.getElementById("myTable").rows[book_id].innerHTML;
+    document.getElementById("book_id").innerHTML=book;
+  }
+</script>
+</head>
+<body>
+
+<p>Search the book you want</p>
+
+<table style="width:100%" id="myTable">
+    <tr>
+      <th>Sr.No.</th>
+      <th>BOOK_ID</th>
+      <th>BOOK_NAME</th>
+      <th>MEMBER_ID</th> 
+      <th>SUPPLIER_ID</th>
+      <th>AUTHER</th>
+      <th>PRICE</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>B001</td>
+      <td>C_PROGRAMMING</td>
+      <td>LM004</td>
+      <td>BS04</td>
+      <td>DENIC_RITCHI</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>B002</td>
+      <td>OPERATING SYSTEM</td>
+      <td>LM009</td>
+      <td>BS02</td>
+      <td>Zac Barnett</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>B003</td>
+      <td>APTITUDE</td>
+      <td>LM005</td>
+      <td>BS03</td>
+      <td>R.S.AGRAWAL</td>
+      <td>350</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>B004</td>
+      <td>JAVA</td>
+      <td>LM001</td>
+      <td>BS04</td>
+      <td>DENIC_RITCHI</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>B005</td>
+      <td>Data Structure</td>
+      <td>LM005</td>
+      <td>BS01</td>
+      <td>DENIC_RITCHI</td>
+      <td>550</td>
+    </tr>
+  </table>
+<br> 
+<p>Please enter the Sr No. of book you want to search</p>
+SrNo.: <input type="text" id="myText" />
+<button title="submit" id="button" onclick="myFunction()">Submit</button>
+<p id="book_id"></p>
+
+</body>
+</html>
