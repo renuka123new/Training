@@ -30,3 +30,6 @@ Codes developed during training
             LMS_Table.html(Library management system using html)
             
 2/7/2021:- Library_Management_System Pages using (HTML + CSS)
+
+5/7/2021:- display_Row.html ,
+           sort_column.html(JS code is added to make html pages responsive.)
