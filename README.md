@@ -33,3 +33,11 @@ Codes developed during training
 
 5/7/2021:- display_Row.html ,
            sort_column.html(JS code is added to make html pages responsive.)
+9/7/2021:- chess_Board_Grains.js , 
+           chess_Board_Queen.js , 
+           complex_Num_Add.js , 
+           nested_to_single_list.js , 
+           reverse_String.js , 
+           reverse_String.html , 
+           string_Encrypt_Decrypt.js , 
+           word_Occurrence.js
